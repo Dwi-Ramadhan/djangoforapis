@@ -1,0 +1,134 @@
+# .gitignore for Django projects
+
+# Environment
+# ------------------------------------------------------------------------------
+# Ignore local environment variables.
+# Use a .env.example file to show developers what variables are needed.
+.env
+.env.*
+
+# Ignore virtual environment directories.
+# The name of your virtual environment may vary, e.g., venv, env, .venv, etc.
+venv/
+env/
+.venv/
+.env/
+virtualenv/
+
+# Python
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / C-extension files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Usually dist/ but pyinstaller --onefile uses a temp folder
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Django
+# ------------------------------------------------------------------------------
+# Default SQLite database
+db.sqlite3
+db.sqlite3-journal
+
+# Media files - these are user-uploaded and should not be in version control
+/media/
+
+# Static files - these are collected from your apps and should be generated on the server
+/static/
+
+# Log files
+*.log
+logs/
+
+# Celery files
+celerybeat-schedule
+celerybeat.pid
+
+# Local settings - often used to override production settings for local development
+local_settings.py
+
+# IDE / Editor specific
+# ------------------------------------------------------------------------------
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+*.iws
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# OS / System specific
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
